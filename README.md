@@ -2,6 +2,8 @@
 
 Home-page for the Raspberry Pi.
 
+![Screenshot](docs/screenshot.png)
+
 ## Installation
 
 - You'll need a webserver, such as Apache, Nginx, Lighttpd, etc.
