@@ -1,0 +1,10 @@
+{
+  "hostname": "pi",
+  "links": {
+    "Link One": "http://example.com/",
+    "Link Two": "http://example.com/",
+    "Link Three": "http://example.com/",
+    "Link Four": "http://example.com/",
+  }
+}
+
