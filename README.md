@@ -6,10 +6,14 @@ Home-page for the Raspberry Pi.
 
 ## Installation
 
-- You'll need a webserver, such as Apache, Nginx, Lighttpd, etc.
-- Clone this repo to your webserver directory (such as `/var/www/html`).
-- Create your `links.json` by copying the sample: `cp links.json.sample links.json`.
-- Edit `links.json` with the desired links and the hostname of your Pi.
+- Clone this repo and create your `links.json` from the sample:
+```
+$ git clone https://github.com/rccavalcanti/pi80.git
+$ cd pi80/public
+$ cp links.json.sample links.json
+```
+- Edit `public/links.json` with the desired links and the hostname of your Pi.
+- Point your webserver _(Apache, Nginx, Lighttpd, etc.)_ root to the `public` directory.
 
 ## Credits
 
