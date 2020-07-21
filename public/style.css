@@ -26,14 +26,26 @@ body {
   align-items: center;
 }
 
+.arrow {
+  border: solid #7067a5;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  margin-right: 6px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  visibility: hidden;
+}
+
 ul {
-  padding-top: 3em;
+  margin-top: 3em;
 }
 
 li {
   font-size: clamp(1.4rem, 4vw, 1.7rem);
   list-style: none;
-  padding-top: 2em;
+  margin-top: 2em;
 }
 
 a {
@@ -42,16 +54,12 @@ a {
   color: inherit;
 }
 
-a:hover {
+li:hover {
   color: #7067a5;
 }
 
-a:hover::before {
-  content: '\25B6';
-  position: absolute;
-  left: -1.3em;
-  top: 0;
-  font-size: 0.8em;
+li:hover > .arrow {
+  visibility: visible;
 }
 
 .hostname {

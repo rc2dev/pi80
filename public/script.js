@@ -16,7 +16,12 @@ const view = (function () {
     const linksEl = document.getElementById('links');
 
     for (link in model.links) {
-      linksEl.innerHTML += `<li><a href="${model.links[link]}">${link}</a></li>`;
+      linksEl.innerHTML += `
+        <li>
+          <i class="arrow"></i>
+          <a href="${model.links[link]}">${link}</a>
+        </li>
+      `;
     }
   }
 
@@ -25,4 +30,4 @@ const view = (function () {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   controller.init();
-})
+});
