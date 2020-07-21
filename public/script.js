@@ -13,13 +13,13 @@ const controller = (function () {
 const view = (function () {
   function render() {
     document.getElementById('hostname').innerText = model.hostname;
-    const linksEl = document.getElementById('links');
+    const menuEl = document.getElementById('menu');
 
     for (link in model.links) {
-      linksEl.innerHTML += `
-        <li>
+      menuEl.innerHTML += `
+        <li class="menu__item">
           <i class="arrow"></i>
-          <a href="${model.links[link]}">${link}</a>
+          <a class="menu__link" href="${model.links[link]}">${link}</a>
         </li>
       `;
     }

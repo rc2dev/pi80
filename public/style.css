@@ -38,27 +38,27 @@ body {
   visibility: hidden;
 }
 
-ul {
+.menu {
   margin-top: 3em;
 }
 
-li {
+.menu__item {
   font-size: clamp(1.4rem, 4vw, 1.7rem);
   list-style: none;
   margin-top: 2em;
 }
 
-a {
+.menu__link {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
 
-li:hover {
+.menu__item:hover {
   color: #7067a5;
 }
 
-li:hover > .arrow {
+.menu__item:hover > .arrow {
   visibility: visible;
 }
 
