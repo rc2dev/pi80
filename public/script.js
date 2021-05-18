@@ -12,6 +12,7 @@ const controller = (function () {
 
 const view = (function () {
   function render() {
+    document.title = model.hostname;
     document.getElementById('hostname').innerText = model.hostname;
     const menuEl = document.getElementById('menu');
 
