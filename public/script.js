@@ -2,9 +2,15 @@ let model = {};
 
 const controller = (function () {
   async function init() {
-    const response = await fetch('/links.json');
-    model = await response.json();
-    view.render();
+    try {
+      const response = await fetch('/links.json');
+      if (!response.ok) throw response;
+
+      model = await response.json();
+      view.render();
+    } catch (e) {
+      view.renderError();
+    }
   }
 
   return { init };
@@ -26,7 +32,11 @@ const view = (function () {
     }
   }
 
-  return { render };
+  function renderError() {
+    document.getElementById('error').innerText = 'Error fetching links.';
+  }
+
+  return { render, renderError };
 })();
 
 document.addEventListener('DOMContentLoaded', (event) => {
