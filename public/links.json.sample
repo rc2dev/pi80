@@ -1,4 +1,5 @@
 {
+  "title": "Raspberry Pi",
   "hostname": "pi",
   "links": {
     "Link One": "http://example.com/",
