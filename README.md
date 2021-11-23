@@ -8,7 +8,7 @@ Home-page for the Raspberry Pi.
 
 - Clone this repo and create your `links.json` from the sample:
 ```
-$ git clone https://github.com/rccavalcanti/pi80.git
+$ git clone https://github.com/rc2dev/pi80.git
 $ cd pi80/public
 $ cp links.json.sample links.json
 ```
