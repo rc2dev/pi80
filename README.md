@@ -23,4 +23,4 @@ $ cp links.json.sample links.json
 
 Released under [GPLv3](LICENSE)
 
-Copyright (C) 2020 Rafael Cavalcanti
+Copyright (C) 2020 [Rafael Cavalcanti](https://rafaelc.org/dev)
