@@ -1,7 +1,7 @@
 :root {
-  --purple: #7067a5;
+  --primary: #444655;
+  --secondary: #FFBD6D;
   --white: #eee;
-  --black: #333;
 }
 
 * {
@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--black);
+  background-color: var(--primary);
   color: var(--white);
   letter-spacing: 0.1em;
   height: 100%;
@@ -33,9 +33,9 @@ body {
 }
 
 .arrow {
-  border: solid var(--purple);
-  border-width: 0 3px 3px 0;
   display: inline-block;
+  border: solid var(--secondary);
+  border-width: 0 3px 3px 0;
   vertical-align: middle;
   padding: 3px;
   margin-right: 6px;
@@ -70,9 +70,9 @@ body {
 }
 
 .menu__item:hover {
-  color: var(--purple);
-}
 
+  color: var(--secondary);
+}
 .menu__item:hover > .arrow {
   visibility: visible;
 }
