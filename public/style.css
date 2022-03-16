@@ -2,6 +2,7 @@
   --primary: #444655;
   --secondary: #FFBD6D;
   --white: #eee;
+  --black: #111;
 }
 
 @font-face {
@@ -82,21 +83,20 @@ body {
 }
 
 .hostname {
-  position: fixed;
-  top: 0.5em;
-  right: 0.5em;
   font-size: 1.3rem;
-  opacity: 0.8;
+  color: var(--black);
+  font-style: italic;
 }
 
 .logo {
   height: 25vh;
+  fill: var(--black);
 }
 
 .logo__container {
-  width: 100%;
   position: fixed;
   bottom: 0.5rem;
-  text-align: right;
+  right: 0.5rem;
   z-index: -1;
+  text-align: center;
 }
