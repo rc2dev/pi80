@@ -1,3 +1,9 @@
+:root {
+  --purple: #7067a5;
+  --white: #eee;
+  --black: #333;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,8 +15,8 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #333;
-  color: #eee;
+  background-color: var(--black);
+  color: var(--white);
   letter-spacing: 0.1em;
   height: 100%;
 }
@@ -27,7 +33,7 @@ body {
 }
 
 .arrow {
-  border: solid #7067a5;
+  border: solid var(--purple);
   border-width: 0 3px 3px 0;
   display: inline-block;
   vertical-align: middle;
@@ -64,7 +70,7 @@ body {
 }
 
 .menu__item:hover {
-  color: #7067a5;
+  color: var(--purple);
 }
 
 .menu__item:hover > .arrow {
