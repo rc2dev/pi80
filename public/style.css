@@ -40,7 +40,7 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  margin-top: 10vh;
+  margin-top: 7vh;
   padding-left: 0;
 }
 
@@ -89,10 +89,15 @@ body {
 }
 
 .logo {
-  height: 25vh;
   fill: var(--black);
+  height: 20vh;
 }
 
+@media(min-width: 750px) {
+  .logo {
+    height: 25vh;
+  }
+}
 .logo__container {
   position: fixed;
   bottom: 0.5rem;
