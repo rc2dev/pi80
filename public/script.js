@@ -25,7 +25,6 @@ const view = (function () {
     for (link in model.links) {
       menuEl.innerHTML += `
         <li class="menu__item">
-          <i class="arrow"></i>
           <a class="menu__link" href="${model.links[link]}">${link}</a>
         </li>
       `;
