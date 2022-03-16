@@ -32,18 +32,6 @@ body {
   align-items: center;
 }
 
-/* Arrows */
-.menu__link:hover::before {
-  content: '';
-  position: absolute;
-  left: -0.9em;
-  top: 0.4em;
-  border: solid var(--secondary);
-  border-width: 0 3px 3px 0;
-  padding: 3px;
-  transform: rotate(-45deg);
-}
-
 .menu-container {
   min-width: 100%;
 }
@@ -69,8 +57,20 @@ body {
   color: inherit;
 }
 
-.menu__item:hover {
+.menu__link:hover {
   color: var(--secondary);
+}
+
+/* Arrows */
+.menu__link:hover::before {
+  content: '';
+  position: absolute;
+  left: -0.9em;
+  top: 0.4em;
+  border: solid var(--secondary);
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
 }
 
 .hostname {
