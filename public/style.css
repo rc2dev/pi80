@@ -38,14 +38,22 @@ body {
   visibility: hidden;
 }
 
+.menu-container {
+  min-width: 100%;
+}
+
 .menu {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 15vh;
+  padding-left: 0;
+  text-align: center;
 }
 
 .menu__item {
-  font-size: clamp(1.4rem, 4vw, 1.7rem);
+  font-size: clamp(1.3rem, 3.5vw, 1.6rem);
   list-style: none;
+}
+
+.menu__item ~ .menu__item {
   margin-top: 2em;
 }
 
@@ -72,13 +80,13 @@ body {
 }
 
 .logo {
-  height: 30vh;
+  height: 25vh;
 }
 
 .logo__container {
   width: 100%;
   position: fixed;
   bottom: 0.5rem;
-  text-align: center;
+  text-align: right;
   z-index: -1;
 }
