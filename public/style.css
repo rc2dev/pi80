@@ -4,6 +4,15 @@
   --white: #eee;
 }
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-condensed-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-condensed-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -14,7 +23,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
   background-color: var(--primary);
   color: var(--white);
   letter-spacing: 0.1em;
@@ -39,7 +48,7 @@ body {
 }
 
 .menu__item {
-  font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+  font-size: clamp(1.5rem, 3.5vw, 1.6rem);
   list-style: none;
 }
 
