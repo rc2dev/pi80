@@ -38,9 +38,7 @@ body {
 .menu {
   /* like a container on small screens */
   width: 80%;
-  margin: 0 auto;
-
-  margin-top: 7vh;
+  margin: 7vh auto;
   padding-left: 0;
 }
 
