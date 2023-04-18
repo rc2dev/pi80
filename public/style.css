@@ -42,20 +42,31 @@ body {
   padding-left: 0;
 }
 
-/* centralize on large screens */
 @media(min-width: 750px) {
+  .main {
+    /* centralize */
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+  }
+
   .menu {
-    width: max-content;
+    /* display in columns */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 750px;
   }
 }
 
 .menu__item {
   font-size: clamp(1.5rem, 3.5vw, 1.6rem);
   list-style: none;
+  flex: 50%;  /* two per line */
 }
 
-.menu__item ~ .menu__item {
-  margin-top: 2em;
+.menu__item {
+  margin-bottom: 2em;
 }
 
 .menu__link {
