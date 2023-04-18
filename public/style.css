@@ -1,17 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 :root {
   --primary: #444655;
   --secondary: #FFBD6D;
   --white: #eee;
   --black: #111;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-condensed-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-condensed-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 * {
@@ -24,10 +17,9 @@ html {
 }
 
 body {
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-family: 'Bungee', Arial, Helvetica, sans-serif;
   background-color: var(--primary);
   color: var(--white);
-  letter-spacing: 0.1em;
   height: 100%;
 }
 
@@ -60,7 +52,7 @@ body {
 }
 
 .menu__item {
-  font-size: clamp(1.5rem, 3.5vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
   list-style: none;
   flex: 50%;  /* two per line */
 }
